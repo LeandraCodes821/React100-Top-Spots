@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
+import axios from 'axios';
+import TopSpot from "./topspot"
 
 class App extends Component {
-  render() {
-    return (
-      <div className='App'></div>
-    );
+  constructor(props) {
+    super (props);
+    this.state = {
+			topspots: []
+		};
   }
 }
 
